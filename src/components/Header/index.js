@@ -1,7 +1,7 @@
 const Header = ({ pages }) => {
     return (
         <header>
-            <h2>Diego Marrs</h2>
+            <h1><a href="/">Diego Marrs</a></h1>
             <ul>
                 {pages.map(page => <li>{page}</li>)}
             </ul>
