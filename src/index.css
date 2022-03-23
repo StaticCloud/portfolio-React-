@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+h1 a {
+  vertical-align: middle;
+}
+
 ul {
   align-items: center;
 }
@@ -42,9 +46,15 @@ header, ul {
 }
 
 header ul li {
-  padding: 5px 10px;
+  padding: 5px 0px;
+  margin: 10px;
+  border-bottom: var(--primary-color) solid var(--border-width);
 }
 
-.selectedPage {
+header ul li:hover {
+  cursor: pointer;
+}
+
+.active {
   border-bottom: var(--secondary-color) solid var(--border-width);
 }
