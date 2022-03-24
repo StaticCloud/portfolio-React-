@@ -3,6 +3,7 @@
   --secondary-color: #df007a;
   --border-width: 3px;
   --body-background: #1b1b1b;
+  --footer: #00000085;
 }
 
 * {
@@ -58,6 +59,22 @@ header ul li {
 
 header ul li:hover {
   cursor: pointer;
+}
+
+footer {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+
+  margin: 30px;
+  padding: 15px;
+  border-radius: 40px;
+  background-color: var(--footer);
+}
+
+footer > h2 {
+  margin: 0 15px;
+  display: inline-block;
 }
 
 .about {
