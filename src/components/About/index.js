@@ -11,8 +11,7 @@ const About = () => {
             transition={{ 
                 duration: 0.5,
                 type: "easeOut"
-            }}
-            >
+            }}>
             <div className="about">
                 <div>
                     <div className="portrait"/>

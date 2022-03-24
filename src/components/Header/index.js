@@ -1,4 +1,10 @@
+import { useEffect } from 'react';
+
 const Header = ({ pages, currentPage, setCurrentPage }) => {
+    useEffect(() => {
+        document.title = currentPage;
+    }, [currentPage])
+    
     return (
         <header>
             <h1><a href="/">Diego Marrs</a></h1>
