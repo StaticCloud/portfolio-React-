@@ -1,6 +1,18 @@
+import { motion } from "framer-motion"
+
 const About = () => {
     return (
-        <div className="content">
+        <motion.div 
+            className="content"
+            animate={{ 
+                opacity: [0, 1],
+                y: [20, 0]
+            }}
+            transition={{ 
+                duration: 0.5,
+                type: "easeOut"
+            }}
+            >
             <div className="about">
                 <div>
                     <div className="portrait"/>
@@ -12,7 +24,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
