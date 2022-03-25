@@ -48,7 +48,8 @@ form div {
   margin: 15px 0;
 }
 
-form button {
+form button, #resume {
+  margin-top: 8px;
   padding: 8px;
   border-radius: 6px;
   border: none;

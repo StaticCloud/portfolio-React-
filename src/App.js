@@ -4,6 +4,7 @@ import About from './components/About'
 import Footer from './components/Footer'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
+import Resume from './components/Resume'
 import { useState } from 'react';
 
 import ypi from './assets/ypi.png';
@@ -12,6 +13,8 @@ import pg from './assets/pg.png';
 import mtb from './assets/mtb.png';
 import bt from './assets/bt.png';
 import nt from './assets/nt.png';
+
+import pdf from './assets/resume/Resume.pdf'
 
 const App = () => {
 
@@ -57,6 +60,12 @@ const App = () => {
             case pages[2]:
               return (
                 <Contact/>
+              )
+            case pages[3]:
+              return (
+                <Resume
+                  pdf={pdf}
+                />
               )
           }
         })()}
