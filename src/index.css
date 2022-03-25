@@ -40,6 +40,27 @@ main {
   margin-bottom: 60px;
 }
 
+form * {
+  display: block;
+}
+
+form div {
+  margin: 15px 0;
+}
+
+form button {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--secondary-color);
+}
+
+form input, textarea {
+  resize: none;
+  padding: 3px;
+  color: black;
+}
+
 header {
   padding: 20px;
   justify-content: space-between;
@@ -95,9 +116,6 @@ footer > h2 {
   margin: 0px 10px;
 }
 
-.about p {
-}
-
 .active {
   border-bottom: var(--secondary-color) solid var(--border-width);
 }
@@ -105,6 +123,7 @@ footer > h2 {
 .content {
   width: 80%;
   margin: 0 auto;
+  padding-top: 25px;
 }
 
 .portrait {
@@ -129,6 +148,11 @@ footer > h2 {
 
 .project-container {
   flex-basis: 25%;
+}
+
+.left-border {
+  padding-left: 10px;
+  border-left: var(--secondary-color) solid var(--border-width);;
 }
 
 #about-content {

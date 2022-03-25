@@ -3,6 +3,7 @@ import Header from './components/Header';
 import About from './components/About'
 import Footer from './components/Footer'
 import Portfolio from './components/Portfolio'
+import Contact from './components/Contact'
 import { useState } from 'react';
 
 import ypi from './assets/ypi.png';
@@ -52,6 +53,10 @@ const App = () => {
                 <Portfolio
                   projects={projects}
                 />
+              )
+            case pages[2]:
+              return (
+                <Contact/>
               )
           }
         })()}
