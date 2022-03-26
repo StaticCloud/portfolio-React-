@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+// header component, takes pages, the current page, and the set current page function for parameters
 const Header = ({ pages, currentPage, setCurrentPage }) => {
     useEffect(() => {
         document.title = currentPage;

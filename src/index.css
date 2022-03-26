@@ -60,6 +60,7 @@ form input, textarea {
   resize: none;
   padding: 3px;
   color: black;
+  width: 360px;
 }
 
 header {

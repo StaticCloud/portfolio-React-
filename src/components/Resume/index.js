@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 
+// resume component, takes the pdf file as a parameter
 const Resume = ({ pdf }) => {
     return (
         <motion.div 

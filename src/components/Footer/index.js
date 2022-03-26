@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 
+// footer component, takes icons for parameters
 const Footer = ({ icons }) => {
     return (
         <footer>

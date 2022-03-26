@@ -20,6 +20,7 @@ const Portfolio = ({ projects }) => {
                 duration: 0.5,
                 type: "easeOut"
             }}> 
+            <h1>Portfolio</h1>
             <div className="portfolio">
                 {projects.map(project => (
                     <div className="project-container" key={project.title} style={{margin: "20px"}}>

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { useState } from 'react'
 
+// contact form page
 const Contact = () => {
     const [formState, setFormState] = useState(
         {
