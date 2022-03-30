@@ -4,7 +4,7 @@ import Header from './components/Header';
 import About from './components/About'
 import Footer from './components/Footer'
 import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
+import Gists from './components/Gists'
 import Resume from './components/Resume'
 import { useState } from 'react';
 
@@ -22,7 +22,7 @@ import pdf from './assets/resume/Resume.pdf'
 const App = () => {
 
   // pages for nav
-  const pages = ['About', 'Portfolio', 'Contact', 'Résumé'];
+  const pages = ['About', 'Portfolio', 'Gists', 'Résumé'];
 
   // links for footer
   const icons = [
@@ -69,7 +69,7 @@ const App = () => {
               )
             case pages[2]:
               return (
-                <Contact/>
+                <Gists/>
               )
             case pages[3]:
               return (

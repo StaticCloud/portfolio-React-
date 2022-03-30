@@ -4,6 +4,7 @@
   --border-width: 3px;
   --body-background: #1b1b1b;
   --footer: #00000085;
+  --gist-background: #111111;
 }
 
 * {
@@ -155,6 +156,18 @@ footer > h2 {
 .left-border {
   padding-left: 10px;
   border-left: var(--secondary-color) solid var(--border-width);;
+}
+
+.gist-wrapper {
+  padding: 12px;
+  margin: 20px 0;
+  border-radius: 20px;
+  background-color: var(--gist-background);
+}
+
+.gist-wrapper p {
+  padding: 5px;
+  margin-top: 5px;
 }
 
 #about-content {
