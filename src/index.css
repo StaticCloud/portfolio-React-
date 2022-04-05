@@ -49,7 +49,7 @@ form div {
   margin: 15px 0;
 }
 
-form button, #resume {
+button, #resume {
   margin-top: 8px;
   padding: 8px;
   border-radius: 6px;
@@ -155,7 +155,7 @@ footer > h2 {
 
 .left-border {
   padding-left: 10px;
-  border-left: var(--secondary-color) solid var(--border-width);;
+  border-left: var(--secondary-color) solid var(--border-width);
 }
 
 .gist-wrapper {
@@ -170,18 +170,34 @@ footer > h2 {
   margin-top: 5px;
 }
 
-#about-content {
-  padding-left: 15px;
-  border-left: var(--secondary-color) solid var(--border-width);;
+#info:hover {
+  cursor: pointer;
 }
 
-#display-title {
-  bottom: 0;
-  left: 0;
-  position: fixed;
+#about-content {
+  padding-left: 15px;
+  border-left: var(--secondary-color) solid var(--border-width);
+}
 
-  margin: 30px;
+#project-wrapper {
+  position: relative;
+}
+
+#project-wrapper h2 {
+  margin: 10px 0px;
+}
+
+#project-wrapper ul {
+  display: block;
+}
+
+#display-project {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+
+  margin: 50px;
   padding: 15px;
   border-radius: 40px;
-  background-color: black;
+  background-color: var(--body-background);
 }

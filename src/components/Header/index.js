@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+import pdf from '../../assets/resume/Resume.pdf'
+
 // header component, takes pages, the current page, and the set current page function for parameters
 const Header = ({ pages, currentPage, setCurrentPage }) => {
     useEffect(() => {
@@ -17,6 +19,7 @@ const Header = ({ pages, currentPage, setCurrentPage }) => {
                         {page}
                     </li>
                 )}
+                <li><a href={pdf} target="_blank">Résumé</a></li>
             </ul>
         </header>
     );
