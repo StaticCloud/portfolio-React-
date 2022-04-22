@@ -8,6 +8,7 @@ import pg from '../../assets/pg.png';
 import mtb from '../../assets/mtb.png';
 import bt from '../../assets/bt.png';
 import nt from '../../assets/nt.png';
+import bh from '../../assets/bh.png';
 
 const Projects = () => {
 
@@ -38,11 +39,11 @@ const Projects = () => {
         role: "This was my first full-stack project. Included front-end work for the HTML, CSS, and front-end fetch request code as well as the back-end including Express.js server routing, CRUD operations, MySQL/Sequelize queries, user-authentication and sessions.",
         tech: ["Node.js", "Express.js", "Sequelize", "MySQL2 (dev)", "Bcrypt"],
         image: mtb, link: "https://limitless-river-31622.herokuapp.com/", github: "https://github.com/StaticCloud/my-tech-blog"},
-        { title: "Note Taker", 
-        desc: "A note taking app built on Express.js, also my first Express.js application. Notes are saved on a JSON database which may also be modified in the event the user adds or deletes a note.",
-        role: "My responsibility was writing the Express.js endpoints and implementing the ability to add or remove notes through CRUD operations.",
-        tech: ["Express.js"],
-        image: nt, link: "https://intense-fortress-45190.herokuapp.com/", github: "https://github.com/StaticCloud/Note-Taker" },
+        { title: 'Beet Hub',
+        desc: 'A platform for discussing music built with the MERN stack! Create collections of albums, favorite albums, and preview albums!',
+        role: 'Handled the bulk of the back-end including GQL schemas and Mongoose models as well as hooking the front-end to the server. Implemented profile, collections, and favorites on both the front-end and the back-end.',
+        tech: ['MongoDB/Mongoose', 'Express.js', 'React', 'Node.js', 'ApolloServer', 'GraphQL', 'JWT'],
+        image: bh, link: 'https://blooming-tundra-89879.herokuapp.com/', github: 'https://github.com/heatherviolet/beat-hub'}
     ]
 
     const [onProjectPage, setOnProjectPage] = useState(false);
@@ -97,7 +98,7 @@ const Projects = () => {
                                 </a>
                             </h1>
                         </div>
-                    ))}
+                    )).reverse()}
                 </div>
             </motion.div>
         );
