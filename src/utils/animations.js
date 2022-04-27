@@ -3,4 +3,9 @@ const mount = {
     y: [20, 0]
 }
 
-module.exports = { mount }
+const unmount = {
+    opacity: [1, 0],
+    y: [0, 20]
+}
+
+module.exports = { mount, unmount }

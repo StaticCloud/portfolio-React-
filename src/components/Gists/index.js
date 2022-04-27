@@ -1,8 +1,8 @@
 import { motion } from "framer-motion"
-import { mount } from '../../utils/animations';
+import { mount, unmount } from '../../utils/animations';
 
 // contact form page
-const Gists = () => {
+const Gists = ({ pageChanged }) => {
 
     const gists = [
         { title: "Regex Tutorial", desc: "Regex, short for regular expressions, is a popular tool used to identify patterns in strings. Regular expressions consist of a series of characters that represent a search pattern. This is very useful for trying to identify and validate certain inputs such as email addresses or URLs.", url: "https://gist.github.com/StaticCloud/c58069c315c9c8191f1f9ebf377bf52d" },
@@ -13,9 +13,11 @@ const Gists = () => {
     return (
         <motion.div 
             className="content"
-            animate={mount}
+            animate={
+                pageChanged ? unmount : mount
+            }
             transition={{ 
-                duration: 0.5,
+                duration: 0.3,
                 type: "easeOut"
             }}>
             <h1>Gists</h1>

@@ -1,14 +1,16 @@
 import { motion } from "framer-motion"
-import { mount } from '../../utils/animations';
+import { mount, unmount } from '../../utils/animations';
 
 // about component
-const About = () => {
+const About = ({ pageChanged }) => {
     return (
         <motion.div 
             className="content"
-            animate={mount}
+            animate={
+                pageChanged ? unmount : mount
+            }
             transition={{ 
-                duration: 0.5,
+                duration: 0.3,
                 type: "easeOut"
             }}>
             <div className="about">

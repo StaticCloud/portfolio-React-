@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import pdf from '../../assets/resume/Resume.pdf'
 
 // header component, takes pages, the current page, and the set current page function for parameters
-const Header = ({ pages, currentPage, setCurrentPage }) => {
+const Header = ({ pages, currentPage, setCurrentPage, hasPageChanged }) => {
     useEffect(() => {
         document.title = currentPage;
     }, [currentPage])
@@ -15,7 +15,13 @@ const Header = ({ pages, currentPage, setCurrentPage }) => {
                 {pages.map(page => 
                     <li key={page}
                         className={`${currentPage === page && 'active'}`}
-                        onClick={() => {setCurrentPage(page)}}>
+                        onClick={() => {
+                            hasPageChanged(true);
+                            setTimeout(() => {
+                                setCurrentPage(page);
+                                hasPageChanged(false);
+                            }, 400)
+                        }}>
                         {page}
                     </li>
                 )}

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { useState } from "react";
+import { mount, unmount } from '../../utils/animations';
 
 // import images for the portfolio page
 import ypi from '../../assets/ypi.png';
@@ -9,7 +10,7 @@ import mtb from '../../assets/mtb.png';
 import bt from '../../assets/bt.png';
 import bh from '../../assets/bh.png';
 
-const Projects = () => {
+const Projects = ({ pageChanged }) => {
 
     // projects including links, images, titles, and github
     const projects = [
@@ -54,12 +55,11 @@ const Projects = () => {
             <motion.div 
                 className="content"
                 id="project-wrapper"
-                animate={{ 
-                    opacity: [0, 1],
-                    y: [20, 0]
-                }}
+                animate={
+                    pageChanged ? unmount : mount
+                }
                 transition={{ 
-                    duration: 0.5,
+                    duration: 0.3,
                     type: "easeOut"
                 }}> 
                 <h1>Projects</h1>
