@@ -139,8 +139,7 @@ footer > h2 {
 
   background-size: cover;
   background-position: center;
-  background-image: url('../public/img/pfp.jpg');
-  filter: grayscale(100%);
+  background-image: url('../public/img/pfp.png');
 }
 
 .portfolio {
