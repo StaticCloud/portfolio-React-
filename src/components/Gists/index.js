@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { mount } from '../../utils/animations';
 
 // contact form page
 const Gists = () => {
@@ -12,10 +13,7 @@ const Gists = () => {
     return (
         <motion.div 
             className="content"
-            animate={{ 
-                opacity: [0, 1],
-                y: [20, 0]
-            }}
+            animate={mount}
             transition={{ 
                 duration: 0.5,
                 type: "easeOut"

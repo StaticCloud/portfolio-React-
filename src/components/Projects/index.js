@@ -7,7 +7,6 @@ import pantry from '../../assets/pantry.png';
 import pg from '../../assets/pg.png';
 import mtb from '../../assets/mtb.png';
 import bt from '../../assets/bt.png';
-import nt from '../../assets/nt.png';
 import bh from '../../assets/bh.png';
 
 const Projects = () => {
