@@ -64,25 +64,47 @@ form input, textarea {
   width: 360px;
 }
 
-header {
-  padding: 20px;
-  justify-content: space-between;
-  background-color: var(--primary-color);
+@media (min-width: 576px) {
+  header, ul {
+    display: flex;
+  }
+
+  header ul {
+    display: visible !important;
+  }
+
+  #menu, #menu * {
+    display: none;
+  }
+
+  #logo-wrap {
+    display: block;
+    flex-wrap: none;
+    justify-content: space-between;
+  }
 }
 
-header h1 {
+header h1:first-child {
   padding-left: 12px;
   border-left: var(--secondary-color) solid var(--border-width);
 }
 
-header, ul {
+#logo-wrap {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 header ul li {
   padding: 5px 0px;
   margin: 10px;
   border-bottom: var(--primary-color) solid var(--border-width);
+}
+
+header {
+  padding: 20px;
+  justify-content: space-between;
+  background-color: var(--primary-color);
 }
 
 header ul li:hover {
