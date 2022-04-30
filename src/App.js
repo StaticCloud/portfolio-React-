@@ -30,6 +30,7 @@ const App = () => {
 
   // set the default page to the first icon
   const [currentPage, setCurrentPage] = useState(pages[0])
+  const [pageChanged, hasPageChanged] = useState(false);
 
   // render the page starting with the header, the main component, and the footer
   return (
@@ -39,26 +40,28 @@ const App = () => {
         pages={pages}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
+        pageChanged={pageChanged}
+        hasPageChanged={hasPageChanged}
       />
       {/* conditionally render components based on the value of the current page */}
-      <main>
-        {(() => {
-          switch(currentPage) {
-            case pages[0]:
-              return (
-                <About/>
-              )
-            case pages[1]:
-              return (
-                <Projects/>
-              )
-            case pages[2]:
-              return (
-                <Gists/>
-              )
-          }
-        })()}
-      </main>
+        <main>
+          {(() => {
+            switch(currentPage) {
+              case pages[0]:
+                return (
+                  <About pageChanged={pageChanged}/>
+                )
+              case pages[1]:
+                return (
+                  <Projects pageChanged={pageChanged}/>
+                )
+              case pages[2]:
+                return (
+                  <Gists pageChanged={pageChanged}/>
+                )
+            }
+          })()}
+        </main>
       <Footer
         icons={icons}
       />
