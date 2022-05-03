@@ -64,6 +64,12 @@ form input, textarea {
   width: 360px;
 }
 
+#menu {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 576px) {
   header, ul {
     display: flex;

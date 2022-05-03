@@ -5,7 +5,7 @@ import About from './components/About'
 import Footer from './components/Footer'
 import Projects from './components/Projects'
 import Gists from './components/Gists'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // deploy to gh pages:
 // install: npm install -D gh-pages
@@ -31,6 +31,11 @@ const App = () => {
   // set the default page to the first icon
   const [currentPage, setCurrentPage] = useState(pages[0])
   const [pageChanged, hasPageChanged] = useState(false);
+
+  // set the page title to the corresponding page
+  useEffect(() => {
+    document.title = `Diego Marrs | ${currentPage}`;
+  }, [currentPage])
 
   // render the page starting with the header, the main component, and the footer
   return (

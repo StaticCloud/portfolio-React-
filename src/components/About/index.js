@@ -31,7 +31,7 @@ const About = ({ pageChanged }) => {
                         <br/>
                         Reach out to me at:
                         <br/>
-                        <h3><i><a type="email" href="mailto: stacloud@protonmail.com">stacloud@protonmail.com</a></i></h3>
+                        <i style={{fontWeight: 'bold'}}><a type="email" href="mailto: stacloud@protonmail.com">stacloud@protonmail.com</a></i>
                     </p>
                 </div>
             </div>

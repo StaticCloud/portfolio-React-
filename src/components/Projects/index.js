@@ -122,7 +122,7 @@ const Projects = ({ pageChanged }) => {
                     <p>{focusedProject.role}</p>
                     <h2>Technologies Used</h2>
                     <ul>
-                        {focusedProject.tech.map(tool => <li style={{margin: "8px 0px"}}><i>{tool}</i></li>)}
+                        {focusedProject.tech.map((tool, i) => <li key={i} style={{margin: "8px 0px"}}><i>{tool}</i></li>)}
                     </ul>
                     <button onClick={() => setOnProjectPage(false)}>Go Back</button>
                 </div>
