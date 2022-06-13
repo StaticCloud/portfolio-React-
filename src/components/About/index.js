@@ -19,7 +19,7 @@ const About = ({ pageChanged }) => {
                 </div>
                 <div className="left-border">
                     <h1>About</h1>
-                    <p style={{minWidth: "360px", maxWidth: "770px"}}>
+                    <p style={{maxWidth: "770px"}}>
                         Hello, I'm Diego! I'm a web developer with a certificate in full-stack web development from University of Oregon and an Associate Degree for computer science from Clark College in Vancouver, Washington. Technical skills include JavaScript, HTML, CSS, Bootstrap, Bulma, OOP, Node.js, Jest, Expressjs, REST APIs, Handlebars, SQL, Sequelize, MVC, NoSQL, Mongoose, React, Apollo Server, Apollo Client, GraphQL, Redux, bcrypt, TDD, Heroku, MySQL2, and MySQL. Former experience with data structures and object-oriented programming. 
                         <br/> 
                         <br/> 
